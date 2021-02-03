@@ -18,10 +18,10 @@ name: build
 on:
   push:
     branches-ignore:
-    - 'master'
+    - 'main'
   pull_request:
     branches:
-    - 'master'
+    - 'main'
 
 jobs:
   build:
