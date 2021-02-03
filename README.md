@@ -4,11 +4,14 @@
 ![build latest](https://github.com/alanbchristie/inform-compiler/workflows/build%20latest/badge.svg)
 
 A container image to compile Interactive Fiction ([Inform-7]) projects,
-compiling text (in `story.in`) into a `story.gblorb` file.
+compiling text (in `story.in`) into: -
 
-Rather than install the Inform-7 command-line tools on the host this project
-builds a container image (`alanbchristie/inform-compiler:latest`) that can be
-used anywhere a container can be used.
+-   a `story.ulx` file
+-   a `story.gblorb` file
+
+Rather than using Inform-7 as an integrated editor you can use any editor
+to form your `.in` and then use a container image to render it into a
+playable file.
 
 To compile an Inform-7 project's Interactive Fiction (a `story.ni`) the user
 simply needs to run the container image, mounting their project directory
@@ -26,8 +29,8 @@ following docker command: -
         -v /my-files/project.inform:/story.inform \
         alanbchristie/inform-compiler:latest
 
-In this example you'll find the resultant `story.gblorb` in
-`/my-files/project.inform`.
+In this example you'll find the resultant `story.ulx` for use with [glulxe]
+and `story.gblorb` in `/my-files/project.inform`.
 
 A _bare minimum_ project is included here under `example.inform`.
 
@@ -40,4 +43,5 @@ on [Docker Hub]. You can build your own image using docker: -
 ---
 
 [docker hub]: https://hub.docker.com
+[glulxe]: https://github.com/erkyrath/glulxe
 [inform-7]: http://inform7.com
