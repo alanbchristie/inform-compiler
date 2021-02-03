@@ -27,7 +27,9 @@ following docker command: -
         alanbchristie/inform-compiler:latest
 
 In this example you'll find the resultant `story.gblorb` in
-`/my-files/project.inform:/story.inform`.
+`/my-files/project.inform`.
+
+A _bare minimum_ project is included here under `example.inform`.
 
 ## Building the image
 The image is built automatically using GitHub Actions and available
