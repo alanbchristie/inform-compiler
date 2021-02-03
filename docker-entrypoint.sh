@@ -37,4 +37,4 @@ inform6 -kw~S~DG +include_path=${STORY_DIR}/Source \
 cBlorb ${STORY_DIR}/Release.blurb ${STORY_DIR}/story.gblorb
 
 # Copy the ulx file into place
-cp ${STORY_DIR}/Build/output.ulx ${STORY_DIR}
+cp ${STORY_DIR}/Build/output.ulx ${STORY_DIR}/story.ulx
